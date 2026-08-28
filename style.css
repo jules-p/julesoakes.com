@@ -1,9 +1,10 @@
 :root {
-  --mustard: #e8a020;
-  --orange: #c45c26;
-  --green: #6b8e23;
-  --brown: #3e2723;
-  --cream: #faf0dc;
+  --primary: #aed6f1;
+  --secondary: #2e86c1;
+  --accent: #f9e547;
+  --accent-dark: #d4ac0d;
+  --dark: #1a3a4a;
+  --light: #f0f8ff;
 }
 
 * {
@@ -17,8 +18,8 @@ html {
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
-  color: var(--brown);
-  background: var(--cream);
+  color: var(--dark);
+  background: var(--light);
   line-height: 1.6;
 }
 
@@ -39,12 +40,12 @@ h3,
   justify-content: space-between;
   gap: 1rem;
   padding: 0.9rem 1.2rem;
-  border-bottom: 4px solid var(--brown);
-  background: var(--mustard);
+  border-bottom: 4px solid var(--dark);
+  background: var(--secondary);
 }
 
 .logo {
-  color: var(--brown);
+  color: var(--light);
   font-size: 1.6rem;
   text-decoration: none;
 }
@@ -59,13 +60,13 @@ h3,
 }
 
 .site-nav a {
-  color: var(--brown);
+  color: var(--light);
   text-decoration: none;
   font-weight: 800;
 }
 
 .site-nav a:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 .hero {
@@ -74,12 +75,12 @@ h3,
   place-items: center;
   text-align: center;
   padding: 2rem 1rem;
-  border-bottom: 4px solid var(--brown);
-  background-color: var(--orange);
+  border-bottom: 4px solid var(--dark);
+  background-color: var(--primary);
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.2) 0 25px, transparent 26px),
-    radial-gradient(circle at 80% 30%, rgba(250, 240, 220, 0.4) 0 40px, transparent 41px),
-    repeating-linear-gradient(-45deg, rgba(107, 142, 35, 0.3), rgba(107, 142, 35, 0.3) 10px, rgba(232, 160, 32, 0.25) 10px, rgba(232, 160, 32, 0.25) 20px);
+    radial-gradient(circle at 20% 20%, rgba(240, 248, 255, 0.5) 0 25px, transparent 26px),
+    radial-gradient(circle at 80% 30%, rgba(174, 214, 241, 0.45) 0 40px, transparent 41px),
+    repeating-linear-gradient(-45deg, rgba(46, 134, 193, 0.2), rgba(46, 134, 193, 0.2) 10px, rgba(249, 229, 71, 0.25) 10px, rgba(249, 229, 71, 0.25) 20px);
 }
 
 .hero h1 {
@@ -95,13 +96,13 @@ h3,
 
 .cta-button,
 .form-submit {
-  border: 3px solid var(--brown);
-  background: var(--green);
-  color: var(--cream);
+  border: 3px solid var(--accent-dark);
+  background: var(--accent);
+  color: var(--dark);
   padding: 0.8rem 1.3rem;
   font-weight: 800;
   text-decoration: none;
-  box-shadow: 5px 5px 0 var(--brown);
+  box-shadow: 5px 5px 0 var(--dark);
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   cursor: pointer;
 }
@@ -109,8 +110,9 @@ h3,
 .cta-button:hover,
 .form-submit:hover {
   transform: translate(2px, 2px);
-  box-shadow: 3px 3px 0 var(--brown);
-  background: var(--brown);
+  box-shadow: 3px 3px 0 var(--dark);
+  background: var(--accent-dark);
+  color: var(--dark);
 }
 
 main {
@@ -120,9 +122,9 @@ main {
 }
 
 .panel {
-  background: #fff8ed;
-  border: 4px solid var(--brown);
-  box-shadow: 7px 7px 0 var(--orange);
+  background: var(--light);
+  border: 4px solid var(--secondary);
+  box-shadow: 7px 7px 0 var(--primary);
   margin: 1.5rem 0;
   padding: 1.2rem;
 }
@@ -130,7 +132,7 @@ main {
 h2 {
   font-size: clamp(2rem, 4.5vw, 2.8rem);
   margin-top: 0;
-  color: var(--orange);
+  color: var(--secondary);
 }
 
 .about-content {
@@ -146,9 +148,9 @@ h2 {
   place-items: center;
   text-align: center;
   font-weight: 800;
-  border: 4px dashed var(--brown);
-  background: var(--mustard);
-  color: var(--brown);
+  border: 4px dashed var(--secondary);
+  background: var(--primary);
+  color: var(--dark);
 }
 
 .show-table-wrap {
@@ -162,23 +164,23 @@ table {
 
 th,
 td {
-  border: 3px solid var(--brown);
+  border: 3px solid var(--secondary);
   padding: 0.7rem;
   text-align: left;
 }
 
 th {
-  background: var(--green);
-  color: var(--cream);
+  background: var(--secondary);
+  color: var(--light);
 }
 
 td a {
-  color: var(--orange);
+  color: var(--secondary);
   font-weight: 700;
 }
 
 td a:hover {
-  color: var(--brown);
+  color: var(--dark);
 }
 
 .video-grid {
@@ -188,25 +190,25 @@ td a:hover {
 }
 
 .video-card {
-  border: 3px solid var(--brown);
+  border: 3px solid var(--secondary);
   padding: 0.75rem;
-  background: var(--cream);
-  box-shadow: 4px 4px 0 var(--green);
+  background: var(--light);
+  box-shadow: 4px 4px 0 var(--primary);
 }
 
 .video-screen {
   height: 150px;
   display: grid;
   place-items: center;
-  background: var(--brown);
-  color: var(--cream);
-  border: 3px solid var(--orange);
+  background: var(--dark);
+  color: var(--light);
+  border: 3px solid var(--secondary);
 }
 
 .play-button {
   border: 0;
   background: transparent;
-  color: var(--cream);
+  color: var(--light);
   padding: 0;
   box-shadow: none;
   font-size: 2rem;
@@ -234,18 +236,19 @@ label {
 input,
 select {
   padding: 0.75rem;
-  border: 3px solid var(--brown);
-  background: #fff;
-  color: var(--brown);
+  border: 3px solid var(--secondary);
+  background: var(--light);
+  color: var(--dark);
   font: inherit;
 }
 
 footer {
-  border-top: 4px solid var(--brown);
+  border-top: 4px solid var(--secondary);
   margin-top: 2rem;
   padding: 1.5rem 1rem 2rem;
   text-align: center;
-  background: var(--mustard);
+  background: var(--dark);
+  color: var(--light);
 }
 
 .social-links {
@@ -257,13 +260,13 @@ footer {
 }
 
 .social-links a {
-  color: var(--brown);
+  color: var(--light);
   font-weight: 800;
   text-decoration: none;
 }
 
 .social-links a:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 
 @media (max-width: 860px) {
