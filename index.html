@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jules Oakes | Standup Comedian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav class="site-nav">
+        <a class="logo" href="#home">Jules Oakes</a>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#shows">Shows</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <h1>Jules Oakes</h1>
+        <p>Coming to a city near you... eventually.</p>
+        <a class="cta-button" href="#shows">See Upcoming Shows</a>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="panel">
+        <h2>About Jules</h2>
+        <div class="about-content">
+          <div>
+            <p>
+              Jules Oakes is the kind of comic who can turn a delayed train, a
+              burnt toast, and a mysterious text from mum into a standing ovation.
+              If life is chaos, Jules is the tour guide with a microphone.
+            </p>
+            <p>
+              Equal parts observational silliness and charming oversharing, Jules
+              has entertained audiences from tiny back rooms to packed-out comedy
+              clubs. Bring your laugh, your mate, and maybe your therapist.
+            </p>
+            <p>
+              Offstage, Jules is probably writing new jokes, drinking too much
+              coffee, and pretending not to panic about "adulting."
+            </p>
+          </div>
+          <div class="photo-placeholder" aria-label="Photo placeholder">
+            Photo coming soon
+          </div>
+        </div>
+      </section>
+
+      <section id="shows" class="panel">
+        <h2>On The Road</h2>
+        <div class="show-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>City</th>
+                <th>Venue</th>
+                <th>Tickets</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>18 Sep 2026</td>
+                <td>London</td>
+                <td>The Punchline Cellar</td>
+                <td><a href="#">Get Tickets</a></td>
+              </tr>
+              <tr>
+                <td>25 Sep 2026</td>
+                <td>Manchester</td>
+                <td>Giggle Hall</td>
+                <td><a href="#">Get Tickets</a></td>
+              </tr>
+              <tr>
+                <td>02 Oct 2026</td>
+                <td>Edinburgh</td>
+                <td>Royal Chuckle Rooms</td>
+                <td><a href="#">Get Tickets</a></td>
+              </tr>
+              <tr>
+                <td>10 Oct 2026</td>
+                <td>Dublin</td>
+                <td>Liffey Laugh Lounge</td>
+                <td><a href="#">Get Tickets</a></td>
+              </tr>
+              <tr>
+                <td>20 Oct 2026</td>
+                <td>NYC</td>
+                <td>Midnight Banana Club</td>
+                <td><a href="#">Get Tickets</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="videos" class="panel">
+        <h2>Watch Jules</h2>
+        <div class="video-grid">
+          <article class="video-card">
+            <div class="video-screen">
+              <button class="play-button" type="button" aria-label="Play: How Not to Cook Pasta">
+                ▶
+              </button>
+            </div>
+            <h3>How Not to Cook Pasta</h3>
+          </article>
+          <article class="video-card">
+            <div class="video-screen">
+              <button
+                class="play-button"
+                type="button"
+                aria-label="Play: Dating Apps &amp; Other Horror Stories"
+              >
+                ▶
+              </button>
+            </div>
+            <h3>Dating Apps & Other Horror Stories</h3>
+          </article>
+          <article class="video-card">
+            <div class="video-screen">
+              <button
+                class="play-button"
+                type="button"
+                aria-label="Play: Airport Security, But Make It Funny"
+              >
+                ▶
+              </button>
+            </div>
+            <h3>Airport Security, But Make It Funny</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="newsletter" class="panel">
+        <h2>Stay in the Loop</h2>
+        <p class="subtext">
+          Tell us your city and we'll let you know when Jules is coming to you!
+        </p>
+        <form action="#" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="city">City</label>
+          <select id="city" name="city" required>
+            <option value="">Pick your city</option>
+            <option>London</option>
+            <option>Manchester</option>
+            <option>Edinburgh</option>
+            <option>Dublin</option>
+            <option>NYC</option>
+            <option>Other</option>
+          </select>
+
+          <button class="form-submit" type="submit">Sign Me Up!</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="social-links">
+        <a href="https://www.instagram.com/julesoakes" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          Instagram
+        </a>
+        <a href="https://www.tiktok.com/@julesoakes" target="_blank" rel="noreferrer">
+          <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+          TikTok
+        </a>
+      </div>
+      <p>© 2026 Jules Oakes. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
