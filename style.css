@@ -1,10 +1,10 @@
 :root {
-  --primary: #aed6f1;
-  --secondary: #2e86c1;
-  --accent: #f9e547;
-  --accent-dark: #d4ac0d;
-  --dark: #1a3a4a;
-  --light: #f0f8ff;
+  --primary: #e8a020;
+  --secondary: #c45c26;
+  --accent: #e8a020;
+  --accent-dark: #c45c26;
+  --dark: #3e2723;
+  --light: #faf0dc;
 }
 
 * {
@@ -78,9 +78,9 @@ h3,
   border-bottom: 4px solid var(--dark);
   background-color: var(--primary);
   background-image:
-    radial-gradient(circle at 20% 20%, rgba(240, 248, 255, 0.5) 0 25px, transparent 26px),
-    radial-gradient(circle at 80% 30%, rgba(174, 214, 241, 0.45) 0 40px, transparent 41px),
-    repeating-linear-gradient(-45deg, rgba(46, 134, 193, 0.2), rgba(46, 134, 193, 0.2) 10px, rgba(249, 229, 71, 0.25) 10px, rgba(249, 229, 71, 0.25) 20px);
+    radial-gradient(circle at 20% 20%, rgba(250, 240, 220, 0.5) 0 25px, transparent 26px),
+    radial-gradient(circle at 80% 30%, rgba(232, 160, 32, 0.45) 0 40px, transparent 41px),
+    repeating-linear-gradient(-45deg, rgba(196, 92, 38, 0.2), rgba(196, 92, 38, 0.2) 10px, rgba(107, 142, 35, 0.25) 10px, rgba(107, 142, 35, 0.25) 20px);
 }
 
 .hero h1 {
