@@ -83,6 +83,23 @@ h3,
     repeating-linear-gradient(-45deg, rgba(196, 92, 38, 0.2), rgba(196, 92, 38, 0.2) 10px, rgba(107, 142, 35, 0.25) 10px, rgba(107, 142, 35, 0.25) 20px);
 }
 
+.hero-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 3vw, 2.5rem);
+}
+
+.hero-title img {
+  width: clamp(9rem, 27vw, 18.9rem);
+  aspect-ratio: 1;
+  flex: 0 0 auto;
+  object-fit: cover;
+  border: 4px solid var(--dark);
+  border-radius: 50%;
+  box-shadow: 5px 5px 0 var(--secondary);
+}
+
 .hero h1 {
   margin: 0;
   font-size: clamp(2.7rem, 8vw, 5rem);
@@ -276,5 +293,21 @@ footer {
 
   .video-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-title {
+    gap: 0.55rem;
+  }
+
+  .hero-title img {
+    width: 8.1rem;
+    border-width: 3px;
+    box-shadow: 3px 3px 0 var(--secondary);
+  }
+
+  .hero h1 {
+    font-size: clamp(2.25rem, 12vw, 3.3rem);
   }
 }
