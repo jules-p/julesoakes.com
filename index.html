@@ -54,17 +54,24 @@
              audiences alike.
             </p>
             <p>
-              Equal parts observational silliness and charming oversharing, Jules
-              has entertained audiences from tiny back rooms to packed-out comedy
-              clubs. Bring your laugh, your mate, and maybe your therapist.
+              Jules spent 12 years working in the tech industry, and began comedy in 2018 as
+              a way of countering the soul destroying nature of her day job. Her comedy blends 
+               absurdity with sincerity, and has been described as "heartfelt" and "weird ass shit",
+              a combination she's proud to have achieved.
             </p>
             <p>
-              Offstage, Jules is probably writing new jokes, drinking too much
-              coffee, and pretending not to panic about "adulting."
+              Jules is currently preparing for a 2027 European tour, working on a new podcast, 
+              and developing a new solo show, tentatively titled "Human Devolution". In the meantime, 
+              you can find her performing around Berlin, or catch up with her across social media platforms 
+              of varying degrees of evil.
+            </p>
+            <p>
+              Outside of her comedy career, you'll find Jules learning to garden, experimenting with food preservation 
+              techniques, and generally preparing for the upcoming apocalypse.
             </p>
           </div>
-          <div class="photo-placeholder" aria-label="Photo placeholder">
-            Photo coming soon
+          <div class="photo-placeholder">
+            <img src="images/yellow-lace.JPG" alt="Jules wearing a yellow lace top" />
           </div>
         </div>
       </section>
@@ -76,41 +83,15 @@
             <thead>
               <tr>
                 <th>Date</th>
+                <th>Show</th>
                 <th>City</th>
                 <th>Venue</th>
                 <th>Tickets</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="show-list">
               <tr>
-                <td>18 Sep 2026</td>
-                <td>London</td>
-                <td>The Punchline Cellar</td>
-                <td><a href="#">Get Tickets</a></td>
-              </tr>
-              <tr>
-                <td>25 Sep 2026</td>
-                <td>Manchester</td>
-                <td>Giggle Hall</td>
-                <td><a href="#">Get Tickets</a></td>
-              </tr>
-              <tr>
-                <td>02 Oct 2026</td>
-                <td>Edinburgh</td>
-                <td>Royal Chuckle Rooms</td>
-                <td><a href="#">Get Tickets</a></td>
-              </tr>
-              <tr>
-                <td>10 Oct 2026</td>
-                <td>Dublin</td>
-                <td>Liffey Laugh Lounge</td>
-                <td><a href="#">Get Tickets</a></td>
-              </tr>
-              <tr>
-                <td>20 Oct 2026</td>
-                <td>NYC</td>
-                <td>Midnight Banana Club</td>
-                <td><a href="#">Get Tickets</a></td>
+                <td colspan="5">Loading shows...</td>
               </tr>
             </tbody>
           </table>
@@ -196,5 +177,12 @@
       </div>
       <p>© 2026 Jules Oakes. All rights reserved.</p>
     </footer>
+    <script>
+      fetch("shows.html")
+        .then((response) => response.text())
+        .then((shows) => {
+          document.querySelector("#show-list").innerHTML = shows;
+        });
+    </script>
   </body>
 </html>
