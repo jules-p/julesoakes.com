@@ -71,7 +71,7 @@
             </p>
           </div>
           <div class="photo-placeholder">
-            <img src="images/yellow-lace.jpg" alt="Jules wearing a yellow lace top" />
+            <img src="images/yellow-lace.JPG" alt="Jules wearing a yellow lace top" />
           </div>
         </div>
       </section>
@@ -103,63 +103,50 @@
         <div class="video-grid">
           <article class="video-card">
             <div class="video-screen">
-              <button class="play-button" type="button" aria-label="Play: How Not to Cook Pasta">
-                ▶
-              </button>
+              <iframe
+                src="https://www.youtube.com/embed/CLlQOp0TzBA?origin=https%3A%2F%2Fjulesoakes.com"
+                title="Jules Oakes video"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
-            <h3>How Not to Cook Pasta</h3>
+            <h3>Cutting bangs and accidentally attracting middle aged men.</h3>
           </article>
           <article class="video-card">
             <div class="video-screen">
-              <button
-                class="play-button"
-                type="button"
-                aria-label="Play: Dating Apps &amp; Other Horror Stories"
-              >
-                ▶
-              </button>
+              <iframe
+                src="https://www.youtube.com/embed/i1a2m_z-JVY?origin=https%3A%2F%2Fjulesoakes.com"
+                title="Jules Oakes video"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
             </div>
-            <h3>Dating Apps & Other Horror Stories</h3>
-          </article>
-          <article class="video-card">
-            <div class="video-screen">
-              <button
-                class="play-button"
-                type="button"
-                aria-label="Play: Airport Security, But Make It Funny"
-              >
-                ▶
-              </button>
-            </div>
-            <h3>Airport Security, But Make It Funny</h3>
+            <h3>Some good PR for Catholicism</h3>
           </article>
         </div>
       </section>
 
       <section id="newsletter" class="panel">
         <h2>Stay in the Loop</h2>
-        <p class="subtext">
-          Tell us your city and we'll let you know when Jules is coming to you!
-        </p>
-        <form action="#" method="post">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="city">City</label>
-          <select id="city" name="city" required>
-            <option value="">Pick your city</option>
-            <option>London</option>
-            <option>Manchester</option>
-            <option>Edinburgh</option>
-            <option>Dublin</option>
-            <option>NYC</option>
-            <option>Other</option>
-          </select>
-
-          <button class="form-submit" type="submit">Sign Me Up!</button>
+        <p>I write a newsletter about building a career as a neurodivergent standup comedian
+          during late-stage capitalism. Sign up below to follow me on that journey, and stay
+        up to date with my latest shows and projects.</p>
+        <form
+          class="newsletter-form"
+          action="https://autheticallyweird.substack.com/api/v1/free?nojs=true"
+          method="post"
+        >
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Your email address"
+            aria-label="Email address"
+            required
+          />
+          <button class="form-submit" type="submit">Subscribe</button>
         </form>
       </section>
     </main>
@@ -173,6 +160,10 @@
         <a href="https://www.tiktok.com/@julesoakes" target="_blank" rel="noreferrer">
           <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
           TikTok
+        </a>
+        <a href="https://buymeacoffee.com/julesoakes" target="_blank" rel="noreferrer">
+          <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+          Buy Me a Coffee
         </a>
       </div>
       <p>© 2026 Jules Oakes. All rights reserved.</p>
