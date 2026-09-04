@@ -49,7 +49,7 @@
         <div class="about-content">
           <div>
             <p>
-             Jules Oakes is a Berlin based comedian, writer, and actor who has performed across Europe.
+             Jules Oakes is a British born, Berlin based comedian, writer, and actor who has performed across Europe.
              Her 2026 Edinburgh Fringe debut, "Jules Oakes: Fragile" received acclaim from critics and
              audiences alike.
             </p>
@@ -149,9 +149,24 @@
           <button class="form-submit" type="submit">Subscribe</button>
         </form>
       </section>
+
+      <section id="contact" class="panel">
+        <h2>Contact Jules</h2>
+        <form class="contact-form" action="https://formsubmit.co/bookings@julesoakes.com" method="post">
+          <input type="hidden" name="_subject" value="New message from julesoakes.com" />
+          <input type="hidden" name="_captcha" value="false" />
+          <label for="contact-name">Name</label>
+          <input id="contact-name" name="name" type="text" autocomplete="name" required />
+          <label for="contact-email">Email address</label>
+          <input id="contact-email" name="email" type="email" autocomplete="email" required />
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" name="message" rows="6" required></textarea>
+          <button class="form-submit" type="submit">Send Message</button>
+        </form>
+      </section>
     </main>
 
-    <footer id="contact">
+    <footer>
       <div class="social-links">
         <a href="https://www.instagram.com/julesoakes" target="_blank" rel="noreferrer">
           <i class="fa-brands fa-instagram" aria-hidden="true"></i>
