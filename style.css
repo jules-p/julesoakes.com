@@ -258,6 +258,22 @@ td a:hover {
   white-space: nowrap;
 }
 
+.shop-panel {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+}
+
+.shop-panel h2,
+.shop-panel p {
+  margin: 0;
+}
+
+.shop-link {
+  display: inline-block;
+  margin: 0.2rem 0 0.4rem;
+}
+
 form {
   display: grid;
   gap: 0.75rem;
