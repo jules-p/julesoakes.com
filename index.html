@@ -23,7 +23,11 @@
     <header id="home">
       <nav class="site-nav">
         <a class="logo" href="#home">Jules Oakes</a>
-        <ul>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <ul id="site-nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#shows">Shows</a></li>
@@ -210,6 +214,22 @@
         .then((shows) => {
           document.querySelector("#show-list").innerHTML = shows;
         });
+
+      const nav = document.querySelector(".site-nav");
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector("#site-nav-links");
+
+      navToggle.addEventListener("click", () => {
+        const isOpen = nav.classList.toggle("menu-open");
+        navToggle.setAttribute("aria-expanded", isOpen);
+      });
+
+      navLinks.addEventListener("click", () => {
+        if (window.matchMedia("(max-width: 560px)").matches) {
+          nav.classList.remove("menu-open");
+          navToggle.setAttribute("aria-expanded", "false");
+        }
+      });
     </script>
   </body>
 </html>

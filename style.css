@@ -69,6 +69,33 @@ h3,
   color: var(--accent);
 }
 
+.nav-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: var(--light);
+  font: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
+  color: var(--accent);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .hero {
   min-height: 70vh;
   display: grid;
@@ -341,12 +368,25 @@ footer {
 
 @media (max-width: 560px) {
   .site-nav {
-    align-items: flex-start;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
   }
 
   .site-nav ul {
-    gap: 0.45rem 0.8rem;
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-top: 0.5rem;
+  }
+
+  .site-nav.menu-open ul {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: block;
   }
 
   .hero {
